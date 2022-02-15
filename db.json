@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "Rith kimsour",
+      "age": 21,
+      "department": "DSE",
+      "province": "Kampong speu"
+    },
+    {
+      "id": 3,
+      "name": "Yun somphors",
+      "age": 19,
+      "department": "DSE",
+      "province": "Kampong som"
+    },
+    {
+      "id": 4,
+      "name": "ros sereyvan",
+      "age": 19,
+      "department": "SE",
+      "province": "Phnom penh"
+    },
+    {
+      "id": 5,
+      "name": "neav kimpor",
+      "age": 19,
+      "department": "SE",
+      "province": "Phnom penh"
+    },
+    {
+      "id": 6,
+      "name": "hai seanghor",
+      "age": 20,
+      "department": "DSE",
+      "province": "kandal"
+    },
+    {
+      "id": 7,
+      "name": "Mao Timong",
+      "age": 20,
+      "department": "DSE",
+      "province": "kampong cham"
+    },
+    {
+      "id": 8,
+      "name": "cheysreylin",
+      "age": 18,
+      "department": "software engineering",
+      "province": "kampot"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

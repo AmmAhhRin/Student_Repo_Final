@@ -1,0 +1,39 @@
+{
+    "student_info":[
+        {
+            "ID":1,
+            "Name":"Sreylin",
+            "Age": 18,
+            "Department": "SE",
+            "Province": "Kampot"
+        },
+        {
+            "ID":2,
+            "Name":"Kimsour",
+            "Age": 20,
+            "Department": "SE",
+            "Province": "Kampong Som"
+        },
+        {
+            "ID":3,
+            "Name":"Somphors",
+            "Age": 19,
+            "Department": "SE",
+            "Province": "Kampong Speu"
+        },
+        {
+            "ID":4,
+            "Name":"Sothea",
+            "Age": 19,
+            "Department": "SE",
+            "Province": "Kandal"
+        },
+        {
+            "ID":5,
+            "Name":"Kimpor",
+            "Age": 18,
+            "Department": "SE",
+            "Province": "Phnom penh"
+        }
+    ]
+}
