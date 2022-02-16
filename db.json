@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "name": "Chey sreylin",
+      "age": 19,
+      "department": "DSE",
+      "province": "kampot"
+    },
+    {
+      "id": 7,
+      "name": "sothea",
+      "age": 19,
+      "department": "DSE",
+      "province": "kandal"
+    },
+    {
+      "id": 8,
+      "name": "rith kimsour",
+      "age": 21,
+      "department": "DSE",
+      "province": "kps"
+    },
+    {
+      "id": 1,
+      "name": "Somphors",
+      "age": 19,
+      "department": "DSE",
+      "province": "KPS"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
