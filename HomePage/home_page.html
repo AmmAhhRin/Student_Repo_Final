@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+    <section class="nav_bar" id="nav">
+        <nav>
+            <div class="logo">StudentRepo</div>
+            <label for="btn" class="icon"><span class="fas fa-bars"></span></label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="home_page.html">Home Page</a></li>
+                <li><a href="#">Student Profile</a></li>
+                <li><a href="#">Form</a></li>
+                <li>
+                    <a href="#">About Project</a>
+                    <label for="btn-1" class="show">About Project +</label>
+                    <input type="checkbox" id="btn-1">
+                    <ul style="z-index: 2;">
+                        <li><a href="objective.html">Objectives</a></li>
+                        <li><a href="built_by.html">Built By</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="body">
+        <div class="text-side">
+            <div id="text-type1"></div>
+            <div id="text-type2"></div>
+            <hr>
+            <p>Each student are unique and different. This repository allow others to learn more about individual students. Check out the student profile for specific data of the student. You may insert new records of students with the form. <br><br> Explore more on our website!</p>
+        </div>
+        <script>
+            var myText1 = 'STUDENT'
+            var myText2 = 'REPOSITORY'
+            var myArray1 = myText1.split("");
+            var myArray2 = myText2.split("");
+            var loopTimer1;
+            var loopTimer2;
+            function frameLooper1(){
+                if (myArray1.length > 0) {
+                    document.getElementById("text-type1").innerHTML += myArray1.shift();
+
+                    }else{
+                        clearTimeout(loopTimer1);
+                        return false;
+                    }
+                    loopTimer1 = setTimeout('frameLooper1()',130);
+            }
+            function frameLooper2(){
+                if(myArray2.length > 0){
+                    document.getElementById("text-type2").innerHTML += myArray2.shift();
+
+                    }else{
+                        clearTimeout(loopTimer2);
+                        return false;
+                    }
+                    loopTimer2 = setTimeout('frameLooper2()',130);
+            }
+            frameLooper1();
+            frameLooper2();
+        </script>
+        <div class="pic-side">
+            <div class="slideshow-container" style="width: 100%;">
+
+                <div class="mySlides fade"  style="z-index: 1;">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="Images/kimsour.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="Images/marady.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="Images/somphors1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="Images/sothea.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="Images/rathanak.JPG" style="width:100%">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+        </div>
+    </section>
+<body>
+    
+</body>
+</html>
