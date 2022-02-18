@@ -1,0 +1,45 @@
+<section class="nav_bar" id="nav">
+    <nav>
+        <div class="logo">StudentRepo</div>
+        <label for="btn" class="icon"><span class="fas fa-bars"></span></label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a routerLink="/home">Home Page</a></li>
+            <li><a routerLink="/studentpf">Student Profile</a></li>
+            <li><a routerLink="/form">Form</a></li>
+            <li>
+                <a>About Project</a>
+                <label for="btn-1" class="show">About Project +</label>
+                <input type="checkbox" id="btn-1">
+                <ul style="z-index: 2;">
+                    <li><a routerLink="/objective">Objectives</a></li>
+                    <li><a routerLink="/built">Built By</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+    <div class="data_student_container" style="margin-top: 2vw; margin-left: 6vw; margin-right: 5vw; background-color: rgb(198, 252, 252);">
+        <!--create table-->
+        <table class="table mt-3">
+          <thead>
+              <tr>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Student Age</th>
+                  <th scope="col">Student Department</th>
+                  <th scope="col">Student Province</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let row of studentData">
+                  <td>{{row.id}}</td>
+                  <td>{{row.name}}</td>
+                  <td>{{row.age}}</td>
+                  <td>{{row.department}}</td>
+                  <td>{{row.province}}</td>
+              </tr>
+          </tbody>
+        </table>
+

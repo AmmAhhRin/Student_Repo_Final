@@ -1,0 +1,69 @@
+<section class="nav_bar" id="nav">
+    <nav>
+        <div class="logo">StudentRepo</div>
+        <label for="btn" class="icon"><span class="fas fa-bars"></span></label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a routerLink="/home">Home Page</a></li>
+            <li><a routerLink="/studentpf">Student Profile</a></li>
+            <li><a routerLink="/form">Form</a></li>
+            <li>
+                <a>About Project</a>
+                <label for="btn-1" class="show">About Project +</label>
+                <input type="checkbox" id="btn-1">
+                <ul style="z-index: 2;">
+                    <li><a routerLink="/objective">Objectives</a></li>
+                    <li><a routerLink="/built">Built By</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</section>
+<section class="body">
+    <div class="text-side">
+        <div [innerText]="text1" id="text-type1"></div>
+        <div [innerText]="text2" id="text-type2"></div>
+        <hr>
+        <p>Each student are unique and different. This repository allow others to learn more about individual students. Check out the student profile for specific data of the student. You may insert new records of students with the form. <br> <b>Explore more on our website!</b></p>
+    </div>
+    
+    <div class="pic-side">
+        <div class="slideshow-container" style="width: 100%;">
+
+            <div  class="mySlides"  style="z-index: 1;" *ngIf="slideif[0]">
+              <div class="numbertext">1 / 5</div>
+              <img src="../../assets/Images/kimsour.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides" id="marady" *ngIf="slideif[1]">
+              <div class="numbertext">2 / 5</div>
+              <img src="../../assets/Images/marady.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides" id="somphors" *ngIf="slideif[2]">
+              <div class="numbertext">3 / 5</div>
+              <img src="../../assets/Images/somphors1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides" id="sothea" *ngIf="slideif[3]">
+                <div class="numbertext">4 / 5</div>
+                <img src="../../assets/Images/sothea.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides" id="rathanak" *ngIf="slideif[4]">
+                <div class="numbertext">5 / 5</div>
+                <img src="../../assets/Images/rathanak.JPG" style="width:100%">
+            </div>
+            
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span [class]="dot[0]" ></span> 
+              <span [class]="dot[1]"></span> 
+              <span [class]="dot[2]"></span> 
+              <span [class]="dot[3]"></span>
+              <span [class]="dot[4]"></span> 
+            </div>
+    </div>
+</section>

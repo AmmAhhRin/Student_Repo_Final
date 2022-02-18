@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 8,
+      "name": "rith kimsour",
+      "age": 21,
+      "department": "DSE",
+      "province": "kps"
+    },
+    {
+      "id": 1,
+      "name": "Somphors",
+      "age": 19,
+      "department": "DSE",
+      "province": "KPS"
+    },
+    {
+      "id": 2,
+      "name": "Chheang",
+      "age": 21,
+      "department": "DSE",
+      "province": "SR"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

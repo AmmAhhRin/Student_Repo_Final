@@ -1,0 +1,76 @@
+{
+  "student_info": [
+    {
+      "id": 1,
+      "name": "Sreylin",
+      "age": 18,
+      "department": "SE",
+      "province": "Kampot"
+    },
+    {
+      "id": 2,
+      "name": "Kimsour",
+      "age": 20,
+      "department": "SE",
+      "province": "Kampong Som"
+    },
+    {
+      "id": 3,
+      "name": "Somphors",
+      "age": 19,
+      "department": "SE",
+      "province": "Kampong Speu"
+    },
+    {
+      "id": 4,
+      "name": "Sothea",
+      "age": 19,
+      "department": "SE",
+      "province": "Kandal"
+    },
+    {
+      "id": 5,
+      "name": "Kimpor",
+      "age": 18,
+      "department": "SE",
+      "province": "Phnom penh"
+    }
+  ],
+  "user_login": [
+    {
+      "id": "yunsomphors20@kit.edu.kh",
+      "name": "Somphors Yun",
+      "school_name": "KIT",
+      "email": "yunsomphors20@kit.edu.kh",
+      "password": "123hihi"
+    },
+    {
+      "id": "hii@gmail.com",
+      "name": "hi",
+      "school_name": "hiihh",
+      "email": "hii@gmail.com",
+      "password": "12"
+    },
+    {
+      "id": "avxhgfK",
+      "name": "",
+      "school_name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "somphors@gmail.com",
+      "name": "Somphors Yun",
+      "school_name": "Kirirom Institute of Technology",
+      "email": "somphors@gmail.com",
+      "password": "helloworld"
+    },
+    {
+      "id": "sothea@gmail.com",
+      "name": "Sothea",
+      "school_name": "KIT",
+      "email": "sothea@gmail.com",
+      "password": "1234"
+    }
+  ]
+}
